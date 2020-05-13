@@ -112,8 +112,9 @@ namespace TFGDNSUpdater
 						return true;
 				}
 			}
-			catch
+			catch (Exception e)
 			{
+				response = e.ToString();
 			}
 
 			return false;
